@@ -19,6 +19,8 @@ RUN mkdir /var/run/sshd
 # Müşteri için bir kullanıcı adı ve şifre oluşturuyoruz (Örn: kullanıcı 'developer', şifre 'tiva123')
 RUN useradd -rm -d /home/developer -s /bin/bash -g root -G sudo -u 1000 developer
 RUN echo 'developer:tiva123' | chpasswd
+# Şifre ile girişe (PasswordAuthentication) kesin olarak izin veriyoruz
+RUN sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/sshd_config
 
 # --- KRİTİK ADIM: VS Code Eklentilerini İmajın İçine Önceden Gömme ---
 # VS Code Server'ın eklentileri container içinde tanıyabilmesi için global dizin oluşturuyoruz
