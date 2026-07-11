@@ -1,0 +1,6 @@
+# Activate MSP430 environment
+export PATH=$PATH:/home/peta/msp430-gcc-9.3.1.11_linux64/bin
+
+# Script Usages
+set_breakpoint.sh <LINE_NUMBER>
+remove_breakpoint.sh <LINE_NUMBER>

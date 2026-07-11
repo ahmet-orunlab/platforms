@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "1 - MSP430: Derle (Make)",
+            "command": "docker exec msp430_running_container make",
+            "group": { "kind": "build", "isDefault": true },
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "type": "shell",
+            "label": "2 - MSP430: Karta Baglan (Canli Konsol)",
+            "command": "docker exec -it msp430_running_container mspdebug rf2500",
+            "problemMatcher": [],
+            "dependsOn": ["1 - MSP430: Derle (Make)"], // Konsol açılmadan önce otomatik derleme yapar
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true, // Terminal açıldığında klavyeyi doğrudan konsola odaklar
+                "panel": "dedicated"
+            }
+        }
+    ]
+}

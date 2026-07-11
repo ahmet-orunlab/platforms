@@ -1,0 +1,894 @@
+[2024-12-30 10:04:53] MCU: Compiling for msp430g2553 ...
+[2024-12-30 10:04:53] Compiling successfull.
+[2024-12-30 10:04:53] Erasing flash memory...
+MSPDebug version 0.22 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2013 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 009
+rf2500: warning: can't detach kernel driver: No data available
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+Using Olimex identification procedure
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2xx3
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+[2024-12-30 10:04:54] Programming device...
+MSPDebug version 0.22 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2013 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 009
+rf2500: warning: can't detach kernel driver: No data available
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+Using Olimex identification procedure
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2xx3
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Writing  132 bytes at c000 [section: .text]...
+Writing   32 bytes at ffe0 [section: .vectors]...
+Done, 164 bytes total
+[2024-12-30 10:04:56] Program running...
+MSPDebug version 0.22 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2013 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 009
+rf2500: warning: can't detach kernel driver: No data available
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+Using Olimex identification procedure
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2xx3
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Running. Press Ctrl+C to interrupt...
+
+    ( PC: 0c06c)  ( R4: 00402)  ( R8: 0dbfc)  (R12: 0ffff)  
+    ( SP: 00400)  ( R5: 05a08)  ( R9: 0fff2)  (R13: 03f7f)  
+    ( SR: 00001)  ( R6: 0bd5e)  (R10: 0fffd)  (R14: 0ffdf)  
+    ( R3: 00000)  ( R7: 0cbe3)  (R11: 07fd7)  (R15: 05cc3)  
+0xc06c:
+    0c06c: 1f 83                     DEC     R15
+    0c06e: 0f 93                     TST     R15
+    0c070: fd 23                     JNZ     0xc06c
+    0c072: 03 43                     NOP     
+    0c074: 03 43                     NOP     
+    0c076: f3 3f                     JMP     0xc05e
+    0c078: 32 d0 f0 00               BIS     #0x00f0, SR
+[2024-12-30 10:05:03] Program done successfully.
+[2024-12-30 10:06:19] MCU: Compiling for msp430g2553 ...
+[2024-12-30 10:06:19] Compiling successfull.
+[2024-12-30 10:06:19] Erasing flash memory...
+MSPDebug version 0.22 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2013 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 009
+rf2500: warning: can't detach kernel driver: No data available
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+Using Olimex identification procedure
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2xx3
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+[2024-12-30 10:06:20] Programming device...
+MSPDebug version 0.22 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2013 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 009
+rf2500: warning: can't detach kernel driver: No data available
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+Using Olimex identification procedure
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2xx3
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Writing  140 bytes at c000 [section: .text]...
+Writing   32 bytes at ffe0 [section: .vectors]...
+Done, 172 bytes total
+[2024-12-30 10:06:21] Program running...
+MSPDebug version 0.22 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2013 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 009
+rf2500: warning: can't detach kernel driver: No data available
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+Using Olimex identification procedure
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2xx3
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Running. Press Ctrl+C to interrupt...
+
+    ( PC: 0c06e)  ( R4: 00402)  ( R8: 0dbfc)  (R12: 0ffff)  
+    ( SP: 00400)  ( R5: 05a08)  ( R9: 0fff2)  (R13: 03f7f)  
+    ( SR: 00001)  ( R6: 0bd5e)  (R10: 0fffd)  (R14: 05a48)  
+    ( R3: 00000)  ( R7: 0cbe3)  (R11: 07fd7)  (R15: 00001)  
+0xc06e:
+    0c06e: 1e 83                     DEC     R14
+    0c070: 0e 93                     TST     R14
+    0c072: fd 23                     JNZ     0xc06e
+    0c074: 1f 83                     DEC     R15
+    0c076: 0f 93                     TST     R15
+    0c078: fa 23                     JNZ     0xc06e
+    0c07a: 03 43                     NOP     
+    0c07c: 03 43                     NOP     
+[2024-12-30 10:06:33] Program done successfully.
+[2024-12-30 10:06:34] MCU: Compiling for msp430g2553 ...
+[2024-12-30 10:06:34] Compiling successfull.
+[2024-12-30 10:06:34] Erasing flash memory...
+MSPDebug version 0.22 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2013 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 009
+rf2500: warning: can't detach kernel driver: No data available
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+Using Olimex identification procedure
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2xx3
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+[2024-12-30 10:06:35] Programming device...
+MSPDebug version 0.22 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2013 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 009
+rf2500: warning: can't detach kernel driver: No data available
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+Using Olimex identification procedure
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2xx3
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Writing  136 bytes at c000 [section: .text]...
+Writing   32 bytes at ffe0 [section: .vectors]...
+Done, 168 bytes total
+[2024-12-30 10:06:36] Program running...
+MSPDebug version 0.22 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2013 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 009
+rf2500: warning: can't detach kernel driver: No data available
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+Using Olimex identification procedure
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2xx3
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Running. Press Ctrl+C to interrupt...
+
+    ( PC: 0c072)  ( R4: 00402)  ( R8: 0dbfc)  (R12: 0ffff)  
+    ( SP: 00400)  ( R5: 05a08)  ( R9: 0fff2)  (R13: 03f7f)  
+    ( SR: 00001)  ( R6: 0bd5e)  (R10: 0fffd)  (R14: 06231)  
+    ( R3: 00000)  ( R7: 0cbe3)  (R11: 07fd7)  (R15: 00001)  
+0xc072:
+    0c072: fd 23                     JNZ     0xc06e
+    0c074: 1f 83                     DEC     R15
+    0c076: 0f 93                     TST     R15
+    0c078: fa 23                     JNZ     0xc06e
+    0c07a: f1 3f                     JMP     0xc05e
+    0c07c: 32 d0 f0 00               BIS     #0x00f0, SR
+    0c080: fd 3f                     JMP     0xc07c
+[2024-12-30 10:06:53] Program done successfully.
+[2024-12-30 10:06:56] MCU: Compiling for msp430g2553 ...
+[2024-12-30 10:06:56] Compiling successfull.
+[2024-12-30 10:06:56] Erasing flash memory...
+MSPDebug version 0.22 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2013 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 009
+rf2500: warning: can't detach kernel driver: No data available
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+Using Olimex identification procedure
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2xx3
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+[2024-12-30 10:06:57] Programming device...
+MSPDebug version 0.22 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2013 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 009
+rf2500: warning: can't detach kernel driver: No data available
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+Using Olimex identification procedure
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2xx3
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Writing  132 bytes at c000 [section: .text]...
+Writing   32 bytes at ffe0 [section: .vectors]...
+Done, 164 bytes total
+[2024-12-30 10:06:58] Program running...
+MSPDebug version 0.22 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2013 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 009
+rf2500: warning: can't detach kernel driver: No data available
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+Using Olimex identification procedure
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2xx3
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Running. Press Ctrl+C to interrupt...
+
+    ( PC: 0c06c)  ( R4: 00402)  ( R8: 0dbfc)  (R12: 0ffff)  
+    ( SP: 00400)  ( R5: 05a08)  ( R9: 0fff2)  (R13: 03f7f)  
+    ( SR: 00001)  ( R6: 0bd5e)  (R10: 0fffd)  (R14: 0121a)  
+    ( R3: 00000)  ( R7: 0cbe3)  (R11: 07fd7)  (R15: 010c6)  
+0xc06c:
+    0c06c: 1f 83                     DEC     R15
+    0c06e: 0f 93                     TST     R15
+    0c070: fd 23                     JNZ     0xc06c
+    0c072: 03 43                     NOP     
+    0c074: 03 43                     NOP     
+    0c076: f3 3f                     JMP     0xc05e
+    0c078: 32 d0 f0 00               BIS     #0x00f0, SR
+[2024-12-30 10:07:06] Program done successfully.
+[2025-01-31 15:39:56] MCU: Compiling for msp430g2553 ...
+[2025-01-31 15:39:56] Compiling successfull.
+[2025-01-31 15:39:56] Erasing flash memory...
+MSPDebug version 0.22 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2013 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+usbutil: unable to find a device matching 0451:f432
+[2025-01-31 15:39:56] Programming device...
+MSPDebug version 0.22 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2013 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+usbutil: unable to find a device matching 0451:f432
+[2025-01-31 15:39:56] Programming failed!
+[2025-01-31 15:40:07] MCU: Compiling for msp430g2553 ...
+[2025-01-31 15:40:07] Compiling successfull.
+[2025-01-31 15:40:07] Erasing flash memory...
+MSPDebug version 0.22 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2013 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 003
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+[2025-01-31 15:40:07] Programming device...
+MSPDebug version 0.22 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2013 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 003
+rf2500: warning: can't detach kernel driver: No data available
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+Using Olimex identification procedure
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2xx3
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Writing  132 bytes at c000 [section: .text]...
+Writing   32 bytes at ffe0 [section: .vectors]...
+Done, 164 bytes total
+[2025-01-31 15:40:09] Program running...
+MSPDebug version 0.22 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2013 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 003
+rf2500: warning: can't detach kernel driver: No data available
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+Using Olimex identification procedure
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2xx3
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Running. Press Ctrl+C to interrupt...
+rf2500: can't receive data: No such device
+fet: polling failed
+rf2500: can't send data: No such device
+fet: final reset failed
+rf2500: can't send data: No such device
+fet: close command failed
+[2025-01-31 15:43:40] Program failed!
+[2025-01-31 15:54:33] MCU: Compiling for msp430g2553 ...
+[2025-01-31 15:54:33] Compiling successfull.
+[2025-01-31 15:54:33] Erasing flash memory...
+MSPDebug version 0.22 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2013 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No data available
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+Using Olimex identification procedure
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2xx3
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+[2025-01-31 15:54:34] Programming device...
+MSPDebug version 0.22 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2013 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No data available
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+Using Olimex identification procedure
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2xx3
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Writing  132 bytes at c000 [section: .text]...
+Writing   32 bytes at ffe0 [section: .vectors]...
+Done, 164 bytes total
+[2025-01-31 15:54:35] Program running...
+MSPDebug version 0.22 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2013 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No data available
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+Using Olimex identification procedure
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2xx3
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Running. Press Ctrl+C to interrupt...
+
+    ( PC: 0c070)  ( R4: 00402)  ( R8: 0dffc)  (R12: 0fddf)  
+    ( SP: 00400)  ( R5: 05a08)  ( R9: 0fff2)  (R13: 03f7f)  
+    ( SR: 00001)  ( R6: 0bd5e)  (R10: 0fffd)  (R14: 0ffdf)  
+    ( R3: 00000)  ( R7: 0cbe3)  (R11: 07fdf)  (R15: 03a73)  
+0xc070:
+    0c070: fd 23                     JNZ     0xc06c
+    0c072: 03 43                     NOP     
+    0c074: 03 43                     NOP     
+    0c076: f3 3f                     JMP     0xc05e
+    0c078: 32 d0 f0 00               BIS     #0x00f0, SR
+    0c07c: fd 3f                     JMP     0xc078
+    0c07e: 30 40                     
+[2025-01-31 15:54:59] Program done successfully.
+[2025-01-31 17:38:05] MCU: Compiling for msp430g2553 ...
+[2025-01-31 17:38:05] Compiling successfull.
+[2025-01-31 17:38:05] Erasing flash memory...
+MSPDebug version 0.22 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2013 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 005
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+[2025-01-31 17:38:06] Programming device...
+MSPDebug version 0.22 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2013 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 005
+rf2500: warning: can't detach kernel driver: No data available
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+Using Olimex identification procedure
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2xx3
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Writing  132 bytes at c000 [section: .text]...
+Writing   32 bytes at ffe0 [section: .vectors]...
+Done, 164 bytes total
+[2025-01-31 17:38:07] Program running...
+MSPDebug version 0.22 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2013 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 005
+rf2500: warning: can't detach kernel driver: No data available
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+Using Olimex identification procedure
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2xx3
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Running. Press Ctrl+C to interrupt...
+
+    ( PC: 0c06c)  ( R4: 00402)  ( R8: 0dffc)  (R12: 0fddf)  
+    ( SP: 00400)  ( R5: 05a08)  ( R9: 0fff2)  (R13: 07f7f)  
+    ( SR: 00001)  ( R6: 0bd5e)  (R10: 0fffd)  (R14: 0ffdf)  
+    ( R3: 00000)  ( R7: 0cbe3)  (R11: 07fdf)  (R15: 0436d)  
+0xc06c:
+    0c06c: 1f 83                     DEC     R15
+    0c06e: 0f 93                     TST     R15
+    0c070: fd 23                     JNZ     0xc06c
+    0c072: 03 43                     NOP     
+    0c074: 03 43                     NOP     
+    0c076: f3 3f                     JMP     0xc05e
+    0c078: 32 d0 f0 00               BIS     #0x00f0, SR
+[2025-01-31 17:38:09] Program done successfully.
+[2025-01-31 17:47:26] MCU: Compiling for msp430g2553 ...
+[2025-01-31 17:47:26] Compiling successfull.
+[2025-01-31 17:47:26] Erasing flash memory...
+MSPDebug version 0.22 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2013 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 005
+rf2500: warning: can't detach kernel driver: No data available
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+Using Olimex identification procedure
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2xx3
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+[2025-01-31 17:47:27] Programming device...
+MSPDebug version 0.22 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2013 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 005
+rf2500: warning: can't detach kernel driver: No data available
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+Using Olimex identification procedure
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2xx3
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Writing  132 bytes at c000 [section: .text]...
+Writing   32 bytes at ffe0 [section: .vectors]...
+Done, 164 bytes total
+[2025-01-31 17:47:28] Program running...
+MSPDebug version 0.22 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2013 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 005
+rf2500: warning: can't detach kernel driver: No data available
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+Using Olimex identification procedure
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2xx3
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Running. Press Ctrl+C to interrupt...
+
+    ( PC: 0c06c)  ( R4: 00402)  ( R8: 0dffc)  (R12: 0fddf)  
+    ( SP: 00400)  ( R5: 05a08)  ( R9: 0fff2)  (R13: 07f7f)  
+    ( SR: 00001)  ( R6: 0bd5e)  (R10: 0fffd)  (R14: 0ffdf)  
+    ( R3: 00000)  ( R7: 0cbe3)  (R11: 07fdf)  (R15: 078c2)  
+0xc06c:
+    0c06c: 1f 83                     DEC     R15
+    0c06e: 0f 93                     TST     R15
+    0c070: fd 23                     JNZ     0xc06c
+    0c072: 03 43                     NOP     
+    0c074: 03 43                     NOP     
+    0c076: f3 3f                     JMP     0xc05e
+    0c078: 32 d0 f0 00               BIS     #0x00f0, SR
+[2025-01-31 17:47:38] Program done successfully.
+[2025-01-31 17:49:17] MCU: Compiling for msp430g2553 ...
+[2025-01-31 17:49:17] Compiling successfull.
+[2025-01-31 17:49:17] Erasing flash memory...
+MSPDebug version 0.22 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2013 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 005
+rf2500: warning: can't detach kernel driver: No data available
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+Using Olimex identification procedure
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2xx3
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+[2025-01-31 17:49:18] Programming device...
+MSPDebug version 0.22 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2013 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 005
+rf2500: warning: can't detach kernel driver: No data available
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+Using Olimex identification procedure
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2xx3
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Writing  132 bytes at c000 [section: .text]...
+Writing   32 bytes at ffe0 [section: .vectors]...
+Done, 164 bytes total
+[2025-01-31 17:49:20] Program running...
+MSPDebug version 0.22 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2013 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 005
+rf2500: warning: can't detach kernel driver: No data available
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+Using Olimex identification procedure
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2xx3
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Running. Press Ctrl+C to interrupt...
+
+    ( PC: 0c070)  ( R4: 00402)  ( R8: 0dffc)  (R12: 0fddf)  
+    ( SP: 00400)  ( R5: 05a08)  ( R9: 0fff2)  (R13: 07f7f)  
+    ( SR: 00001)  ( R6: 0bd5e)  (R10: 0fffd)  (R14: 0ffdf)  
+    ( R3: 00000)  ( R7: 0cbe3)  (R11: 07fdf)  (R15: 04027)  
+0xc070:
+    0c070: fd 23                     JNZ     0xc06c
+    0c072: 03 43                     NOP     
+    0c074: 03 43                     NOP     
+    0c076: f3 3f                     JMP     0xc05e
+    0c078: 32 d0 f0 00               BIS     #0x00f0, SR
+    0c07c: fd 3f                     JMP     0xc078
+    0c07e: 30 40                     
+[2025-01-31 17:49:41] Program done successfully.

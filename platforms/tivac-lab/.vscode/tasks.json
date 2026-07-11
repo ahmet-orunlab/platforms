@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "1 - TIVA: Derle (Make)",
+            "command": "make",
+            "group": { "kind": "build", "isDefault": true }
+        },
+        {
+            "type": "shell",
+            "label": "2 - TIVA: Sadece Karta Yazilimi At (Flash)",
+            "command": "lm4flash build/firmware.bin",
+            "problemMatcher": []
+        }
+    ]
+}

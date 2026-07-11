@@ -1,0 +1,12 @@
+{
+    "name": "Tiva C Uzak Geliştirme Ortamı",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "mcu-debug.debug-tracker-vscode",
+                "marus25.cortex-debug",
+                "ms-vscode.cpptools"
+            ]
+        }
+    }
+}

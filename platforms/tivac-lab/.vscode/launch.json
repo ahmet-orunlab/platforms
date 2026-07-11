@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "TIVA Container İçi Debug",
+            "type": "cortex-debug",
+            "request": "launch",
+            // openocd doğrudan container içinde ayağa kalkacak
+            "servertype": "openocd", 
+            "interface": "swd",
+            
+            // Konteyner içindeki derleme çıktısı
+            "executable": "${workspaceRoot}/build/firmware.elf",
+            "cwd": "${workspaceRoot}",
+            
+            // Konteyner içindeki gdb yolu
+            "armToolchainPath": "/usr/bin",
+            "gdbPath": "/usr/bin/gdb-multiarch",
+            
+            // Tiva C (TM4C123) için gerekli OpenOCD config dosyası
+            "configFiles": [
+                "board/ek-tm4c123gxl.cfg"
+            ],
+            "postLaunchCommands": [
+                "monitor reset init"
+            ]
+        }
+    ]
+}
