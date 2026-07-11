@@ -7,6 +7,7 @@ docker run -d \
   --privileged \
   -p 2222:22 \
   -v /dev/bus/usb:/dev/bus/usb \
+  -v $(pwd)/.ssh_host_keys:/etc/ssh/ssh_host_keys \
   -v $(pwd)/projects:/workspace \
   tivac-lab-env
 
