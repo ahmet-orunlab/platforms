@@ -1,0 +1,50 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "MSP430 Donanimsal Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            // Yerel doğrulamayı geçmesi için gerçek local yolu gösteriyoruz
+            "program": "${workspaceRoot}/build/main.elf",
+            "cwd": "/workspace",
+            "MIMode": "gdb",
+            
+            "pipeTransport": {
+                "pipeProgram": "/usr/bin/docker",
+                "pipeArgs": [
+                    "exec",
+                    "-i",
+                    "msp430_running_container",
+                    "msp430-gdb",
+                    "--interpreter=mi"
+                ],
+                "debuggerPath": "/usr/bin/docker",
+                "pipeCwd": "${workspaceRoot}"
+            },
+            
+            "miDebuggerServerAddress": "localhost:3333",
+            "preLaunchTask": "MSP430: GDB Sunucusunu Baslat",
+            
+            "sourceFileMap": {
+                "/workspace": "${workspaceRoot}"
+            },
+            
+            "setupCommands": [
+                {
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "text": "file /workspace/build/main.elf",
+                    "ignoreFailures": false
+                },
+                {
+                    "text": "target remote localhost:3333",
+                    "ignoreFailures": false
+                }
+            ],
+            "logging": { "engineLogging": false }
+        }
+    ]
+}
