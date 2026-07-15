@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "STM32F4 Container İçi Debug",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd", 
+            "interface": "swd",
+            
+            "executable": "${workspaceRoot}/build/firmware.elf",
+            "cwd": "${workspaceRoot}",
+            
+            "armToolchainPath": "/usr/bin",
+            "gdbPath": "/usr/bin/gdb-multiarch",
+            
+            // STM32F4 ST-Link yapılandırması
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32f4x.cfg"
+            ],
+            "postLaunchCommands": [
+                "monitor reset init"
+            ],
+            // KRİTİK: GDB ve OpenOCD işlemlerinin tüm detaylarını görmek için ekliyoruz
+            "showDevDebugOutput": "raw"
+        }
+    ]
+}

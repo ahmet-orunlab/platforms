@@ -1,0 +1,12 @@
+{
+    "name": "STM32F4 Uzak Geliştirme Ortamı",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "mcu-debug.debug-tracker-vscode",
+                "marus25.cortex-debug",
+                "ms-vscode.cpptools"
+            ]
+        }
+    }
+}

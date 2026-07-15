@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "1 - STM32: Derle (Make)",
+            "command": "make",
+            "group": { "kind": "build", "isDefault": true }
+        },
+        {
+            "type": "shell",
+            "label": "2 - STM32: Sadece Karta Yazilimi At (Flash)",
+            "command": "st-flash write build/firmware.bin 0x08000000",
+            "problemMatcher": []
+        }
+    ]
+}

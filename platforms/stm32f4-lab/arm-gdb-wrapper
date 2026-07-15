@@ -1,0 +1,3 @@
+#!/bin/bash
+# VS Code'un tırnakla gönderdiği hatalı parametreleri temizleyip gerçek GDB'yi tetikler
+exec /usr/bin/gdb-multiarch --interpreter=mi
