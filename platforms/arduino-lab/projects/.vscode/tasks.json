@@ -1,0 +1,42 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "1 - Arduino Uno: Derle (Make)",
+            "command": "make",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "shell",
+            "label": "2 - Arduino Uno: Karta Yukle (avrdude)",
+            "command": "sudo bash ./scripts/upload.sh",
+            "dependsOn": [
+                "1 - Arduino Uno: Derle (Make)"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "type": "shell",
+            "label": "3 - Arduino Uno: Simulasyon GDB Sunucusunu Baslat",
+            "command": "bash ./scripts/start_simavr_gdb.sh",
+            "isBackground": true,
+            "dependsOn": [
+                "1 - Arduino Uno: Derle (Make)"
+            ],
+            "problemMatcher": {
+                "pattern": {
+                    "regexp": "."
+                },
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": ".",
+                    "endsPattern": "SIMAVR_GDB_READY"
+                }
+            }
+        }
+    ]
+}

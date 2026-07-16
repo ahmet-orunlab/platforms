@@ -4,27 +4,31 @@
         {
             "label": "MSP430: 1. Projeyi Derle (Make)",
             "type": "shell",
-            "command": "docker exec -i msp430_running_container make -C /workspace",
+            // docker exec yerine doğrudan konteyner içindeki make'i çağırıyoruz
+            "command": "make -C /workspace",
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "presentation": { "reveal": "always", "panel": "shared" }
+            "presentation": { "reveal": "always", "panel": "shared" },
+            "problemMatcher": []
         },
         {
             "label": "MSP430: 2. Direkt Flash Belleğe Yaz (Flash)",
             "type": "shell",
-            "command": "docker exec -i msp430_running_container pkill mspdebug || true; docker exec -i msp430_running_container mspdebug rf2500 'prog /workspace/build/main.elf'",
+            // docker exec kısımları temizlendi, doğrudan mspdebug komutları çalışıyor
+            "command": "sudo pkill mspdebug || true; sudo mspdebug rf2500 'prog /workspace/build/main.elf'",
             "dependsOn": [
                 "MSP430: 1. Projeyi Derle (Make)"
             ],
-            "presentation": { "reveal": "always", "panel": "shared" }
+            "presentation": { "reveal": "always", "panel": "shared" },
+            "problemMatcher": []
         },
         {
             "label": "MSP430: GDB Sunucusunu Baslat",
             "type": "shell",
-            // KRİTİK ADIM: Konteyner içine otomatik yol köprüsü kurup ardından GDB sunucusunu açıyoruz
-            "command": "docker exec -i msp430_running_container mkdir -p /home/ahmet/orunlab/projs/platforms/msp430-lab && docker exec -i msp430_running_container ln -sfn /workspace /home/ahmet/orunlab/projs/platforms/msp430-lab/projects; docker exec -i msp430_running_container pkill mspdebug || true; sleep 1; docker exec -i msp430_running_container mspdebug rf2500 'gdb 3333'",
+            // docker exec kısımları temizlendi.
+            "command": "sudo pkill mspdebug || true; sleep 1; sudo mspdebug rf2500 'gdb 3333'",
             "isBackground": true,
             "dependsOn": [
                 "MSP430: 2. Direkt Flash Belleğe Yaz (Flash)"

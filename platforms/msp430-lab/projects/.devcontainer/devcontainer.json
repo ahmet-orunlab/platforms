@@ -1,16 +1,10 @@
 {
-  "name": "MSP430 Altyapi Laboratuvari",
-  "image": "msp430-lab-env",
-  "runArgs": [
-    "--privileged",
-    "-v", "/dev/bus/usb:/dev/bus/usb",
-    "-p", "2000:2000"
-  ],
-  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
-  "workspaceFolder": "/workspace",
+  "name": "MSP430 Uzak Gelistirme Ortami",
   "customizations": {
     "vscode": {
-      "extensions": ["ms-vscode.cpptools"]
+      "extensions": [
+        "ms-vscode.cpptools"
+      ]
     }
   }
 }

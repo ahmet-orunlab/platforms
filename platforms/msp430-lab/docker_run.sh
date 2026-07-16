@@ -1,23 +1,36 @@
 #!/bin/bash
+set -e
 
-# 1. Eğer aynı isimde eski bir konteyner varsa çakışmayı önlemek için durdur ve sil
-echo "Eski konteynerler temizleniyor..."
-docker rm -f msp430_running_container 2>/dev/null
+DEVICE_SYMLINK="${MSP430_DEVICE_SYMLINK:-/dev/msp430_launchpad}"
+DEVICE_ARGS=()
 
-# 2. Dockerfile'ı oku ve 'msp430_image' adıyla yerel bir imaj olarak build et
-echo "MSP430 Docker imaji build ediliyor..."
-docker build -t msp430_image .
+printf 'Eski konteynerler temizleniyor...\n'
+docker rm -f msp430_running_container 2>/dev/null || true
 
-# 3. Build edilen bu yerel imajı tam yetki, tty desteği (-t) ve USB yönlendirmesiyle ayağa kaldır
-echo "Konteyner baslatiliyor..."
+printf 'MSP430 Docker imaji build ediliyor...\n'
+docker build -t msp430-lab-env .
+
+# Udev tarafinda sabit bir symlink tanimlandiysa cihaza ozel gecis olarak ekle.
+# Symlink yoksa /dev ve /dev/bus/usb mountlari sayesinde yine devam ederiz.
+if [ -e "$DEVICE_SYMLINK" ]; then
+  printf 'MSP430 cihaz symlink bulundu: %s\n' "$DEVICE_SYMLINK"
+  DEVICE_ARGS+=("--device=$DEVICE_SYMLINK")
+else
+  printf 'Uyari: MSP430 cihaz symlink bulunamadi: %s\n' "$DEVICE_SYMLINK"
+  printf 'Konteyner yine /dev ve /dev/bus/usb mountlari ile baslatilacak.\n'
+fi
+
+printf 'Konteyner baslatiliyor...\n'
 docker run -d -t \
   --name msp430_running_container \
   --privileged \
   -v /dev/bus/usb:/dev/bus/usb \
   -v /dev:/dev \
-  --device=/dev/msp430_launchpad \
+  "${DEVICE_ARGS[@]}" \
   -p 3333:3333 \
+  -p 2223:22 \
+  -v $(pwd)/.ssh_host_keys:/etc/ssh/ssh_host_keys \
   -v $(pwd)/projects:/workspace \
-  msp430_image
+  msp430-lab-env
 
-echo "MSP430 Konteyneri basariyla calisti!"
+printf 'MSP430 Konteyneri basariyla calisti! SSH portu: 2223\n'

@@ -6,7 +6,7 @@ int main(void) {
 
     while(1) {
         P1OUT ^= 0x01;          // LED durumunu tersle
-        __delay_cycles(100000); // Gecikme
+        __delay_cycles(1000000); // Gecikme
     }
 }
 

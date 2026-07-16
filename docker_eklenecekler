@@ -1,0 +1,6 @@
+- SSH şifresi şuanda sabit. password_gen eklenmeli güvenlik için. Her bağlantıda şifre değişmeli.
+- usb bağlantıları exporter'a tanımlanacak. Seri numarası bilinen kartlar symlink ile her zaman aynı isimde bağlantı kuracak usb port üzerinden.
+- usb portu güç kapa/aç eklenecek. (usb hub geldikten sonra bu çalışmalar güncellenecek.)
+- Containerlar kullanım durumunda heart beat üretmeli. Daha sonrasında containerların kullanım durumlarını kontrol edebilmek için.
+- Containerların içine vscode ile çalışmak için çeşitli config dosyaları eklendi. İleri süreçte farklı idelerde de çalışabilmek için farklı config dosyaları da eklenmeli. 
+- SSH bağlantısı yaparken vscode server downloading kısımları uzun sürüyor. Yüklenmesi gereken şeyleri lokale çekmenin avantajlarına bakılacak !!
