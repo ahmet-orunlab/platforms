@@ -24,6 +24,8 @@ RUN mkdir /var/run/sshd
 # Geliştirici kullanıcısı oluşturma
 RUN useradd -m -s /bin/bash -G sudo developer && \
     echo "developer:stm123" | chpasswd
+
+RUN echo "developer ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
     
 # VS Code klasörünü önceden oluşturup yetkisini developer'a teslim ediyoruz
 RUN mkdir -p /home/developer/.vscode-server/extensions && \

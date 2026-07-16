@@ -10,7 +10,7 @@
         {
             "type": "shell",
             "label": "2 - TIVA: Sadece Karta Yazilimi At (Flash)",
-            "command": "lm4flash build/firmware.bin",
+            "command": "sudo lm4flash build/firmware.bin",
             "problemMatcher": []
         }
     ]

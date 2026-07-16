@@ -26,6 +26,8 @@ RUN mkdir /var/run/sshd
 RUN useradd -m -s /bin/bash -G sudo developer && \
     echo "developer:tiva123" | chpasswd
     #usermod -aG sudo developer
+
+RUN echo "developer ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
     
 # Müşterinin VS Code klasörünü önceden oluşturup yetkisini developer'a teslim ediyoruz
 RUN mkdir -p /home/developer/.vscode-server/extensions && \

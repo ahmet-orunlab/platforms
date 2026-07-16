@@ -10,7 +10,7 @@
         {
             "type": "shell",
             "label": "2 - STM32: Sadece Karta Yazilimi At (Flash)",
-            "command": "st-flash write build/firmware.bin 0x08000000",
+            "command": "sudo st-flash write build/firmware.bin 0x08000000",
             "problemMatcher": []
         }
     ]

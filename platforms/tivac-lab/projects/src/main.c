@@ -25,6 +25,6 @@ int main(void) {
     
     while(1) {
         GPIO_PORTF_DATA_R ^= 0x02; // LED durumunu tersle (Toggle)
-        delay(4000000);             // Yaklasik 1 saniye gecikme
+        delay(1000000);             // Yaklasik 1 saniye gecikme
     }
 }

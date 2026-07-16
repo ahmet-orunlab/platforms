@@ -28,6 +28,6 @@ int main(void) {
         // 3. PD12 pinini tersle (Toggle)
         GPIOD_ODR ^= (1UL << 12);
         
-        delay(10000000);
+        delay(2000000);
     }
 }
